@@ -14,6 +14,13 @@ public class OperadoresRelacionais : MonoBehaviour
     >= Maior ou Igual Que
     <= Menor ou Igual Que
 */
+
+    //Operadores Lógicos
+/*
+    && And/E        Todas as sentenças precisam ser verdadeiras, para o resultado ser verdadeiro
+    || Or/Ou        Uma sentença verdadeira, dará o resultado verdadeiro
+    !(sentença)     Investe o valor booleano da sentença
+*/
     public int numero01, numero02;
     public bool maiorQue;
     public string veracidade;
