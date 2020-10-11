@@ -11,8 +11,15 @@ public class SistemaDeCompraDeVida : MonoBehaviour
         if(carteira >= valorDaVida){
             print("Posso comprar vida.");
         } else{print("Não posso comprar vida.");}
-        if (vidas >= 1){ vivo = true;
-        } else{ vivo = false;}
+
+        //Operador Ternário
+        // variavel = CONDICAO?TRUE:FALSE
+        vivo = (vidas > 0)? true : false;
+        
+        if(vivo){
+            print("Jogador com vida");
+        }else{print("Jogador sem vida!");}
+
     }
 
     // Update is called once per frame
