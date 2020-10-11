@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class SistemaDeCompraDeVida : MonoBehaviour
 {
-    public int vidas = 1, valorDaVida = 100, carteira = 80;
+    public int vidas = 1, valorDaVida = 100, carteira = 80, dificuldade;
     public bool vivo;
+
     void Start()
     {
         if(carteira >= valorDaVida){
@@ -19,6 +20,22 @@ public class SistemaDeCompraDeVida : MonoBehaviour
         if(vivo){
             print("Jogador com vida");
         }else{print("Jogador sem vida!");}
+
+        //Utilizando Case em Switch ao invés de condicionais IF
+        switch(dificuldade){
+            case 1:
+            print("Muito facil!");
+            break;
+            case 2:
+            print("Tudo normal!");
+            break;
+            case 3:
+            print("Muito Dificil!");
+            break;
+            default:
+            print("Dificuldade não encontrada!");
+            break;
+        }
 
     }
 
